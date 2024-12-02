@@ -3966,7 +3966,7 @@ window.onload = function() {
          <!--Bikalp start here-->
     @if ($showBikalp)
      
-     <form class="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg" method="POST" action="{{ route('store.bikalp') }}">
+ <form class="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg" method="POST" action="{{ route('store.bikalp') }}">
      @csrf
     @if(session('success'))
     <div class="alert alert-success">
@@ -4012,13 +4012,19 @@ window.onload = function() {
        @endif
    
        <div class="space-y-6">
-           <!-- Student Handled -->
-           <div>
-       <label for="handled" class="block text-gray-700 font-semibold mb-2">Student Handled:</label>
-       <select id="handled" name="handled" class="w-full p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" required>
-           
-       </select>
-   </div>
+        <!-- Student Handled -->
+        <div>
+    <label for="handled" class="block text-gray-700 font-semibold mb-2">Student Handled:</label>
+    <select id="handled" name="handled" class="w-full p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+    <option value="" disabled selected>Select  Student Handled</option>
+        <option value="Gaurav">Gaurav</option>
+        <option value="Roshan">Roshan</option>
+        <option value="Ram">Ram</option>
+        <option value="Samiksha">Samiksha</option>
+        <option value="Bikalp">Bikalp</option>
+    </select>
+</div>
+
    
   
 
@@ -4026,7 +4032,7 @@ window.onload = function() {
    
    
            <!-- Source -->
-           <div class="max-w-4xl mx-auto">
+           <div class="max-w-4xl mx-auto p-8">
     <!-- Header Section -->
     <div class="mb-6">
         <label for="source" class="block text-gray-800 text-lg font-semibold mb-2">Source of Student:</label>
@@ -4045,21 +4051,89 @@ window.onload = function() {
             <label for="b-to-b" class="block text-gray-800 text-lg font-semibold mb-2">B to B:</label>
             <select id="b-to-b" name="b-to-b" class="w-full p-4 border border-gray-300 rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300 ease-in-out" required>
                 <option value="" disabled selected>Select your B to B</option>
-                
+                <option value="Edulink, Ananta Sir">Edulink, Ananta Sir</option>
+                <option value="Crystal Education">Crystal Education</option>
+                <option value="Crystal Education Butwal">Crystal Education Butwal</option>
+                <option value="Boston">Boston</option>
+                <option value="Brighton">Brighton</option>
+                <option value="Dream Unique">Dream Unique</option>
+                <option value="Evani Education">Evani Education</option>
+                <option value="Fortune Education">Fortune Education</option>
+                <option value="Lead Ahead">Lead Ahead</option>
+                <option value="Manohar Sir">Manohar Sir</option>
+                <option value="Merit Itahari">Merit Itahari</option>
+                <option value="Merit Putalisadak">Merit Putalisadak</option>
+                <option value="Merit Britamod">Merit Britamod</option>
+                <option value="Merit Butwal">Merit Butwal</option>
+                <option value="Mirai Global">Mirai Global</option>
+                <option value="Prashant Sir">Prashant Sir</option>
+                <option value="Achivers Sujan">Achivers Sujan</option>
+                <option value="Swift/Skyway Education Banepa">Swift/Skyway Education Banepa</option>
+                <option value="Tesla">Tesla</option>
+                <option value="VXL">VXL</option>
+                <option value="Pro Visa(Professional Visa & Education Services)">Pro Visa(Professional Visa & Education Services)</option>
+                <option value="Achievers Putalisadak">Achievers Putalisadak</option>
+                <option value="Jay Prakash SEC Nepal">Jay Prakash SEC Nepal</option>
+                <option value="Rohini">Rohini</option>
+                <option value="Rajesh Rightpath">Rajesh Rightpath</option>
+                <option value="Rounak Janakpur">Rounak Janakpur</option>
+                <option value="Carl Duisburg">Carl Duisburg</option>
+                <option value="Study Connect">Study Connect</option>
+                <option value="Ved International">Ved International</option>
+                <option value="Big Education">Big Education</option>
+                <option value="Read and Fly">Read and Fly</option>
+                <option value="Eduport">Eduport</option>
+                <option value="Goodlife Career(No Contact)">Goodlife Career(No Contact)</option>
+                <option value="WRI">WRI</option>
+                <option value="Frequency Eduhub">Frequency Eduhub</option>
+                <option value="Metro">Metro</option>
+                <option value="Highlight">Highlight</option>
+                <option value="Career Guidance(CG)">Career Guidance(CG)</option>
+                <option value="Vira Education">Vira Education</option>
+                <option value="Goals Education(My Journey Franchise)">Goals Education(My Journey Franchise)</option>
+                <option value="Mile Stone Services, Madhu Dai">Mile Stone Services, Madhu Dai</option>
+                <option value="Lernovate, Pokhara">Lernovate, Pokhara</option>
+                <option value="Titan Education Service, Bagbazar">Titan Education Service, Bagbazar</option>
+                <option value="Scholarchoice">Scholarchoice</option>
+                <option value="Peak Education">Peak Education</option>
+                <option value="ANZ Education Services">ANZ Education Services</option>
+                <option value="Migration Mithila">Migration Mithila</option>
+                <option value="Elite Apprentice Education Consultancy">Elite Apprentice Education Consultancy</option>
+                <option value="Apply Abroad">Apply Abroad</option>
+                <option value="White House & WRI Partnership">White House & WRI Partnership</option>
+                <option value="Tesla">Tesla</option>
+                <option value="Study Hub">Study Hub</option>
+                <option value="Elite Movers Education consultancy Pvt. Ltd">Elite Movers Education consultancy Pvt. Ltd</option>
+                <option value="ICAN Eduction Services">ICAN Eduction Services</option>
+                <option value="Real World">Real World</option>
+                <option value="Paragraph">Paragraph</option>
+                <option value="Edurise">Edurise</option>
+
             </select>
+            
+           
+
             
         </div>
 
         <!-- B to C Dropdown -->
-        <!-- B to C Container -->
-<div id="b-to-c-container" class="flex-1 hidden">
-  <label for="b-to-c" class="block text-gray-800 text-lg font-semibold mb-2">B to C:</label>
-  <select id="b-to-c" name="b-to-c" class="w-full p-4 border border-gray-300 rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300 ease-in-out" required>
-    <option value="" disabled selected>Select your B to C</option>
-  </select>
-</div>
+        <div id="b-to-c-container" class="flex-1 hidden">
+            <label for="b-to-c" class="block text-gray-800 text-lg font-semibold mb-2">B to C:</label>
+            <select id="b-to-c" name="b-to-c" class="w-full p-4 border border-gray-300 rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300 ease-in-out" required>
+                <option value="" disabled selected>Select your B to C</option>
+                <option value="FaceBook">FaceBook</option>
+                <option value="Google">Google</option>
+                <option value="Student Reference">Student Reference</option>
+                <option value="Walking Students">Walking Students</option>
+                <option value="Instagram">Instagram</option>
+                <option value="Events">Events</option>
+    
+            </select>
 
-
+           
+            <!-- Add/Remove buttons for B to C -->
+           
+        </div>
     </div>
 
 </div>
@@ -4081,7 +4155,129 @@ window.onload = function() {
         }
     });
 
-   
+    // Function to load B to B options from localStorage
+    function loadBToBOptions() {
+        var select = document.getElementById("b-to-b");
+        var bToBList = JSON.parse(localStorage.getItem("bToBList")) || [];
+
+        // Add options to the dropdown from localStorage or default list
+        bToBList.forEach(function(name) {
+            var newOption = document.createElement("option");
+            newOption.value = name;
+            newOption.textContent = name;
+            select.appendChild(newOption);
+        });
+    }
+
+    // Function to load B to C options from localStorage
+    function loadBToCOptions() {
+        var select = document.getElementById("b-to-c");
+        var bToCList = JSON.parse(localStorage.getItem("bToCList")) || [];
+
+        // Add options to the dropdown from localStorage or default list
+        bToCList.forEach(function(name) {
+            var newOption = document.createElement("option");
+            newOption.value = name;
+            newOption.textContent = name;
+            select.appendChild(newOption);
+        });
+    }
+
+    // Function to add a new B to B name to the dropdown and store it in localStorage
+    function addBToB() {
+        var newBToBName = document.getElementById("newbtob").value.trim();
+        
+        if (newBToBName) {
+            var select = document.getElementById("b-to-b");
+            var bToBList = JSON.parse(localStorage.getItem("bToBList")) || [];
+
+            if (bToBList.indexOf(newBToBName) === -1) {
+                var newOption = document.createElement("option");
+                newOption.value = newBToBName;
+                newOption.textContent = newBToBName;
+                select.appendChild(newOption);
+
+                bToBList.push(newBToBName);
+                localStorage.setItem("bToBList", JSON.stringify(bToBList));
+
+                document.getElementById("newbtob").value = "";
+            } else {
+                alert("This B to B entry has already been added.");
+            }
+        } else {
+            alert("Please enter a valid B to B name.");
+        }
+    }
+
+    // Function to remove the selected B to B name from the dropdown and localStorage
+    function removeBToB() {
+        var select = document.getElementById("b-to-b");
+        var selectedOption = select.options[select.selectedIndex];
+
+        if (selectedOption && selectedOption.value !== "") {
+            select.removeChild(selectedOption);
+
+            var bToBList = JSON.parse(localStorage.getItem("bToBList")) || [];
+            var index = bToBList.indexOf(selectedOption.value);
+            if (index > -1) {
+                bToBList.splice(index, 1);
+                localStorage.setItem("bToBList", JSON.stringify(bToBList));
+            }
+        } else {
+            alert("Please select a B to B option to remove.");
+        }
+    }
+
+    // Function to add a new B to C name to the dropdown and store it in localStorage
+    function addBToC() {
+        var select = document.getElementById("b-to-c");
+        var newBToCName = document.getElementById("newbtoc").value.trim();
+
+        if (newBToCName) {
+            var bToCList = JSON.parse(localStorage.getItem("bToCList")) || [];
+
+            if (bToCList.indexOf(newBToCName) === -1) {
+                var newOption = document.createElement("option");
+                newOption.value = newBToCName;
+                newOption.textContent = newBToCName;
+                select.appendChild(newOption);
+
+                bToCList.push(newBToCName);
+                localStorage.setItem("bToCList", JSON.stringify(bToCList));
+
+                document.getElementById("newbtoc").value = "";
+            } else {
+                alert("This B to C has already been added.");
+            }
+        } else {
+            alert("Please enter a B to C.");
+        }
+    }
+
+    // Function to remove the selected B to C name from the dropdown and localStorage
+    function removeBToC() {
+        var select = document.getElementById("b-to-c");
+        var selectedOption = select.options[select.selectedIndex];
+
+        if (selectedOption && selectedOption.value !== "") {
+            select.removeChild(selectedOption);
+
+            var bToCList = JSON.parse(localStorage.getItem("bToCList")) || [];
+            var index = bToCList.indexOf(selectedOption.value);
+            if (index > -1) {
+                bToCList.splice(index, 1);
+                localStorage.setItem("bToCList", JSON.stringify(bToCList));
+            }
+        } else {
+            alert("Please select a B to C to remove.");
+        }
+    }
+
+    // Load options on page load
+    window.onload = function() {
+        loadBToBOptions();
+        loadBToCOptions();
+    };
 </script>
 
 
@@ -4821,187 +5017,27 @@ function removeUniversityandBoard() {
 
     <!-- Third dropdown (Initiated by) that will be shown when "Initiated Offer" is selected -->
     <div class="flex-1 mt-4" id="initiated-by-container" style="display: none;">
-    <label for="initiated" class="block text-gray-700 font-semibold mb-2">Initiated by:</label>
-    <select id="initiated" name="initiated" class="w-full p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
-        <option value="" disabled selected>Select Initiated</option>
-        <option value="hello">hello</option>
-    </select>
-</div>
+        <label for="initiated" class="block text-gray-700 font-semibold mb-2">Initiated by:</label>
+        <select id="initiated" name="initiated" class="w-full p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <option value="" disabled selected>Select Initiated</option>
+            <option value="Gaurav">Gaurav</option>
+            <option value="Bikalp">Bikalp</option>
+            <option value="Samiksha">Samiksha</option>
+            <option value="Ram">Ram</option>
+            <option value="Roshan">Roshan</option>
+        </select>
+    </div>
 
-<div class="flex-1 mt-4" id="processing-by-container" style="display: none;">
+    <div class="flex-1 mt-4" id="processing-by-container" style="display: none;">
     <label for="processing" class="block text-gray-700 font-semibold mb-2">Processing By:</label>
     <select id="processing" name="processing" class="w-full p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" required>
         <option value="" disabled selected>Select your Processing</option>
-        <!-- Add dynamic options here -->
+        <option value="Oxford Group">Oxford Group</option>
+        <option value="Study Group">Study Group</option>
+        <option value="UWE">UWE</option>
     </select>
 </div>
-
 </div>
-
-
-<script>
- // Load data from localStorage and populate the select boxes on page load
- window.onload = function() {
-    loadItems('initiatedby', 'initiated');  // Load initiated options into the dropdown
-    loadItems('processingby', 'processing');  // Load processing options into the dropdown
-    loadItems('btocby', 'b-to-c');  // Load B to C options into the dropdown
-    loadItems('btobby', 'b-to-b');
-    loadItems('studenthandledby', 'handled');
-
-    // Optionally, handle the visibility of containers based on selections
-    document.getElementById('initiated').addEventListener('change', toggleContainers);
-    document.getElementById('processing').addEventListener('change', toggleContainers);
-    document.getElementById('b-to-c').addEventListener('change', toggleContainers);
-    document.getElementById('b-to-b').addEventListener('change', toggleContainers);
-    document.getElementById('handled').addEventListener('change', toggleContainers);
-  };
-
-  // Function to load items from localStorage and populate the select box
-  function loadItems(key, selectId) {
-    const list = JSON.parse(localStorage.getItem(key)) || [];
-    const select = document.getElementById(selectId);
-
-    // Clear the current options
-    select.innerHTML = '';
-
-    // Add default "Select" option
-    const defaultOption = document.createElement('option');
-    defaultOption.value = '';
-    defaultOption.disabled = true;
-    defaultOption.selected = true;
-    defaultOption.textContent = 'Select your ' + selectId.charAt(0).toUpperCase() + selectId.slice(1);
-    select.appendChild(defaultOption);
-
-    // Populate the dropdown with saved values
-    list.forEach(item => {
-      const option = document.createElement('option');
-      option.textContent = item;
-      option.value = item;
-      select.appendChild(option);
-    });
-  }
-
-  // Function to toggle the visibility of containers based on dropdown selection
-  function toggleContainers() {
-    const initiatedValue = document.getElementById('initiated').value;
-    const processingValue = document.getElementById('processing').value;
-    const btocValue = document.getElementById('b-to-c').value;
-    const btobValue = document.getElementById('b-to-b').value;
-    const handledValue = document.getElementById('handled').value;
-
-    // Show/Hide Initiated By Container
-    document.getElementById('initiated-by-container').style.display = initiatedValue ? 'block' : 'none';
-
-    // Show/Hide Processing By Container
-    document.getElementById('processing-by-container').style.display = processingValue ? 'block' : 'none';
-
-    // Show/Hide B to C Container
-    document.getElementById('b-to-c-container').style.display = btocValue ? 'block' : 'none';
-
-    document.getElementById('b-to-b-container').style.display = btobValue ? 'block' : 'none';
-
-    document.getElementById('handled-container').style.display = btobValue ? 'block' : 'none';
-  }
-
-  // Function to add new item to the list and save to localStorage
-  function addItem(key) {
-    let inputField;
-    let selectId;
-
-    // Handle input field and select ID based on the key
-    if (key === 'initiatedby') {
-      inputField = document.getElementById('newInitiated');
-      selectId = 'initiated';
-    } else if (key === 'processingby') {
-      inputField = document.getElementById('newProcessing');
-      selectId = 'processing';
-    } else if (key === 'btocby') {
-      inputField = document.getElementById('newbtoc');
-      selectId = 'b-to-c';
-    } 
-    else if (key === 'btobby') {
-      inputField = document.getElementById('newbtob');
-      selectId = 'b-to-b';
-    } 
-    else if (key === 'studenthandledby') {
-      inputField = document.getElementById('newStudentHandled');
-      selectId = 'handled';
-    }
-    else {
-      alert('Invalid key');
-      return;
-    }
-
-    const name = inputField.value.trim();
-
-    if (name === '') {
-      alert('Please enter a name.');
-      return;
-    }
-
-    // Get the existing items from localStorage
-    const list = JSON.parse(localStorage.getItem(key)) || [];
-
-    // Add the new item to the list
-    list.push(name);
-
-    // Save the updated list back to localStorage
-    localStorage.setItem(key, JSON.stringify(list));
-
-    // Clear the input field
-    inputField.value = '';
-
-    // Reload the dropdown to show the new item
-    loadItems(key, selectId);
-  }
-
-  // Function to remove selected item from the list and localStorage
-  function removeItem(key) {
-    let selectId;
-
-    // Determine the correct select ID based on the key
-    if (key === 'initiatedby') {
-      selectId = 'initiated';
-    } else if (key === 'processingby') {
-      selectId = 'processing';
-    } else if (key === 'btocby') {
-      selectId = 'b-to-c';
-    } 
-    else if (key === 'btobby') {
-      selectId = 'b-to-b';
-    } 
-    else if (key === 'studenthandledby') {
-      selectId = 'handled';
-    }
-    else {
-      alert('Invalid key');
-      return;
-    }
-
-    const select = document.getElementById(selectId);
-    const selectedOption = select.value;
-
-    if (!selectedOption) {
-      alert('Please select an item to remove.');
-      return;
-    }
-
-    // Get the existing items from localStorage
-    const list = JSON.parse(localStorage.getItem(key)) || [];
-
-    // Remove the selected item
-    const updatedList = list.filter(item => item !== selectedOption);
-
-    // Save the updated list back to localStorage
-    localStorage.setItem(key, JSON.stringify(updatedList));
-
-    // Reload the dropdown to reflect the changes
-    loadItems(key, selectId);
-  }
-
-</script>
-
-
 
 <script>
     // Function to toggle the visibility of the form
@@ -5015,51 +5051,49 @@ function removeUniversityandBoard() {
         }
     }
 
-   // Toggle visibility of the second dropdown based on document status
-function toggleInitiatedVisibility() {
-    var documentStatus = document.getElementById("document").value;
-    var secondDropdownContainer = document.getElementById("second-dropdown-container");
+    // Toggle visibility of the second dropdown based on document status
+    function toggleInitiatedVisibility() {
+        var documentStatus = document.getElementById("document").value;
+        var secondDropdownContainer = document.getElementById("second-dropdown-container");
 
-    // Show the second dropdown if "Fully Received" is selected, otherwise hide it
-    if (documentStatus === "Fully Received") {
-        secondDropdownContainer.style.display = "block";
-    } else {
-        secondDropdownContainer.style.display = "none";
-        document.getElementById("initiated-by-container").style.display = "none";  // Hide "Initiated by" when switching away
+        // Show the second dropdown if "Fully Received" is selected, otherwise hide it
+        if (documentStatus === "Fully Received") {
+            secondDropdownContainer.style.display = "block";
+        } else {
+            secondDropdownContainer.style.display = "none";
+            document.getElementById("initiated-by-container").style.display = "none";  // Hide "Initiated by" when switching away
+        }
     }
-}
 
-// Toggle visibility of the "Initiated by" dropdown based on the selection in the "Initiated Offer Information" dropdown
-function toggleInitiatedByVisibility() {
-    var initiatedOfferInfo = document.getElementById("additional-info").value;
-    var initiatedByContainer = document.getElementById("initiated-by-container");
+    // Toggle visibility of the "Initiated by" dropdown based on the selection in the "Initiated Offer Information" dropdown
+    function toggleInitiatedByVisibility() {
+        var initiatedOfferInfo = document.getElementById("additional-info").value;
+        var initiatedByContainer = document.getElementById("initiated-by-container");
 
-    // Show the "Initiated by" dropdown if "Initiated Offer" is selected, otherwise hide it
-    if (initiatedOfferInfo === "Initiated Offer") {
-        initiatedByContainer.style.display = "block";
-    } else {
-        initiatedByContainer.style.display = "none";
+        // Show the "Initiated by" dropdown if "Initiated Offer" is selected, otherwise hide it
+        if (initiatedOfferInfo === "Initiated Offer") {
+            initiatedByContainer.style.display = "block";
+        } else {
+            initiatedByContainer.style.display = "none";
+        }
     }
-}
 
-// Get references to the dropdowns
-const initiatedDropdown = document.getElementById("initiated");
-const processingContainer = document.getElementById("processing-by-container");
+     // Get references to the dropdowns
+     const initiatedDropdown = document.getElementById("initiated");
+    const processingContainer = document.getElementById("processing-by-container");
 
-// Add an event listener to the "Initiated by" dropdown
-initiatedDropdown.addEventListener("change", function() {
-    // Check if a value is selected in the "Initiated by" dropdown
-    if (initiatedDropdown.value) {
-        // Show the "Processing by" dropdown if "Initiated by" is selected
-        processingContainer.style.display = "block";
-    } else {
-        // Hide the "Processing by" dropdown if no value is selected in "Initiated by"
-        processingContainer.style.display = "none";
-    }
-});
-
+    // Add an event listener to the "Initiated by" dropdown
+    initiatedDropdown.addEventListener("change", function() {
+        // Check if a value is selected in the "Initiated by" dropdown
+        if (initiatedDropdown.value) {
+            // Show the "Processing by" dropdown
+            processingContainer.style.display = "block";
+        } else {
+            // Hide the "Processing by" dropdown if no value is selected
+            processingContainer.style.display = "none";
+        }
+    });
 </script>
-
 
 <!--processing end here-->
            <!-- Submit Button -->
